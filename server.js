@@ -121,8 +121,14 @@ app.post("/bulk-stk", async (req, res) => {
 
 app.post("/callback", (req, res) => {
 
-  console.log("TinyPesa Callback:", req.body);
+  const data = await response.json();
 
+console.log("TinyPesa Response:", data);
+
+return {
+  success: response.ok,
+  data,
+};
   res.json({
     success: true,
   });
