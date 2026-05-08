@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bulk STK Push Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Bulk STK Push Bot</h1>
+
+    <input
+      type="number"
+      id="amount"
+      placeholder="Enter Amount"
+    />
+
+    <textarea
+      id="numbers"
+      placeholder="Enter phone numbers separated by commas or new lines"
+    ></textarea>
+
+    <button onclick="sendSTK()">
+      Send STK Push
+    </button>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
