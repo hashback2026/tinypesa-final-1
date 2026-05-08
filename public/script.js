@@ -46,9 +46,15 @@ async function sendSTK() {
 
       div.innerHTML = `
         <strong>${item.phone}</strong><br>
-        ${item.success
-          ? "STK Sent"
-          : "Failed"}
+        div.innerHTML = `
+  <strong>${item.phone}</strong><br>
+  ${
+    item.success
+      ? "STK Sent Successfully"
+      : item.data?.message ||
+        JSON.stringify(item.data)
+  }
+`;
       `;
 
       resultsDiv.appendChild(div);
