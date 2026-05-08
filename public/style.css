@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  padding: 40px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.result-item {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.success {
+  background: #d4edda;
+}
+
+.error {
+  background: #f8d7da;
+}
